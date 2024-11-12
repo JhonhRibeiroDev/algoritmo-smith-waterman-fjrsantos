@@ -52,7 +52,6 @@ def print_matrix_with_headers(matrix, seq1, seq2, file):
         print(file=file)
 
     # Cabeçalho inferior "X U T C G"
-    # Cabeçalho com seq2 invertido
     print("X", "U", *seq2, sep="   ", file=file)
 
 
@@ -74,6 +73,7 @@ def traceback(matrix, seq1, seq2, len1, len2, gap, mismatch, match):
 
     # Começar o rastreamento a partir da célula com o maior valor na última coluna
     i, j = max_row, len2 - 1
+    #i, j = len1 - 1, len2 - 1   #Aqui é pra caso eu queira começar no canto superior direito.
 
     while i > 0 or j > 0:
         if i > 0 and j > 0 and matrix[i][j] == matrix[i-1][j-1] + (match if seq1[i-1] == seq2[j-1] else mismatch):

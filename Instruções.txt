@@ -1,0 +1,35 @@
+*** COMO DEVE SER A ENTRADA ***:
+arquivo texto com as duas sequencias. Uma sequência em cada linha
+Exemplo do arquivo de entrada, cujo nome DEVE SER input.txt:
+Na linha 1 colocar a primeira sequência (vertical)
+Na linha 2 colocar a segunda sequência (horizontal)
+Na linha 3 colocar o valor de GAP
+Na linha 4 colocar o valor de mismatch
+Na linha 5 colocar o valor de match
+
+
+Exemplo de arquivo de entrada (input.txt):
+ATC
+TCG
+-2
+-1
+1
+
+*** COMO DEVE SER A SAIDA ***:
+Imprimir em tela e arquivo da forma a seguir (não precisa do negrito):
+-----------------------------------------------------------
+** matrix **
+===========================================================
+C -6 -3 0 -2
+T -4 -1 -2 -4
+A -2 -1 -3 -5
+U 0 -2 -4 -6
+X U T C G
+===========================================================
+Score = 1 
+** Match = 1 | mismatch = -1 | Gap = -2 **
+-----------------------------------------------------------
+Alinhamento
+A T C G
+- T C G
+-----------------------------------------------------------
